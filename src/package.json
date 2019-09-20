@@ -1,6 +1,6 @@
 {
 	"name": "nativescript-paycards-recognizer",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Your awesome NativeScript plugin.",
 	"main": "paycards-recognizer",
 	"typings": "index.d.ts",

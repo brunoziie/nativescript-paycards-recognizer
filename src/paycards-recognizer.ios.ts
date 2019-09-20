@@ -116,6 +116,12 @@ export class PaycardsRecognizer {
                 .presentViewControllerAnimatedCompletion(nav, true, () => {});
         }, 0);
 
-        return Promise.resolve(null);
+        return new Promise((resolve, reject) => {
+            try {
+                (<RecognizerViewController> recognizerView).setCallback(resolve);
+            } catch (err) {
+                reject(err);
+            }
+        });
     }
 }
